@@ -1,0 +1,10 @@
+# Methods:-
+==========
+1. Collections.sort(List list)
+2. Collections.sort(List list, Collections.reverseOrder( ))
+3. Arrays.sort(array)
+4. Arrays.sort(array, Collections.reverseOrder( ))
+
+# Interfaces used to compair custom objects in java:-
+        1. Comparable interface
+        2. Comparator interface
