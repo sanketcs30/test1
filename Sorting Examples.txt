@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+       //Concept:- Sort the Map based on keys 
+       //TreeMap bydefault sorts the Map based on keys in ascending order 
+       
+       //Syntax1:- Sort the map based on keys in ascending order
+       //TreeMap<X> map1 = new TreeMap<>() => Ascending order
+       
+       //Syntax2:- Sorth the map based on keys in descending order 
+       //TreeMap<X> map2 = new TreeMap<>(Collection.reverseOrder())
+       
+       //Requirement1:- Sort the Map based on keys [Ascending order]
+       Map<String, Integer> map1 = new LinkedHashMap<>();
+       map1.put("xyz", 10);
+       map1.put("abc", 5);
+       map1.put("def", 15);
+       
+       System.out.println("Map1 before sorting:- "+map1);
+       
+       TreeMap<String, Integer> ascKeyMap = new TreeMap<>();
+       ascKeyMap.putAll(map1);
+       System.out.println("Map1 after sorting [Asc]:- "+ascKeyMap);
+       
+       //Requirement2:- Sort the Map based on keys [Descending order]
+       TreeMap<String, Integer> descKeyMap = 
+                            new TreeMap<>(Collections.reverseOrder());
+       descKeyMap.putAll(map1);
+       System.out.println("Map1 after sorting [Desc]:- "+descKeyMap);       
+	}
+}
+
